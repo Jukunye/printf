@@ -39,5 +39,9 @@ int _strlen(char *str)
  */
 int print(char *string)
 {
+	if (string == NULL)
+	{
+		return (write(1, "(null)", 6));
+	}
 	return (write(1, string, _strlen(string)));
 }
