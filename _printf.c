@@ -39,11 +39,21 @@ int _printf(const char *format, ...)
 					break;
 				case 'd':
 					num = va_arg(args, int);
+					if (num == 0)
+					{
+						j += _putchar('0');
+						break;
+					}
 					i_to_str(buffer, num);
 					j += print(buffer);
 					break;
 				case 'i':
 					num = va_arg(args, int);
+					if (num == 0)
+					{
+						j += _putchar('0');
+						break;
+					}
 					i_to_str(buffer, num);
 					j += print(buffer);
 					break;
