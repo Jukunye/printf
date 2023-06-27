@@ -4,7 +4,7 @@
 int _printf(const char *format, ...);
 
 /**
- * -printf - prints a formated string to output stream
+ * _printf - prints a formated string to output stream
  *  @format: the format string
  *
  *  Return: number of characters printed, otherwise (-1).
